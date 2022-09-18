@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+        <div class="newsmaindiv" style="border-top: none;">
+            <div id="tabs" class="advisory_tabs maintabs ui-tabs watchlist_tabs" style="">
+                
+                <div id="tabs-1" class="tabs tabs ui-tabs-panel ui-widget-content ui-corner-bottom tabs2div " style="display: none;">
+                    <div class="seperateDiv" style="">
+                        <div class="popupbtn">
+                            <a class="mL10" href="#" id="myadvisoryRefresh">
+                                <img src="/images/trading/white_Refresh.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cB"></div>
+                </div>
+                <div id="tabs-2" class="tabs tabs ui-tabs-panel ui-widget-content ui-corner-bottom tabs2div" style="">
+                    <div class="seperateDiv" style="">
+                        <div class="popupbtn wdth15">
+                            <div class="iradio_square-blue checked" style="position: relative;"><input type="radio" name="activebtn" class="advisoryOpenCalls customButtons" checked="" id="openCall" value="opencall" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><span class="vM" style="color: #fff; padding-left:5px;">Open Calls</span>
+                            <!--  <a href="#" class="activeBlue_btn mL10" style="" id="openCall" data-call="openCall">
+                                <span class="" style="">Open Calls</span></a> -->
+                        </div>
+                        <div class="popupbtn wdth15">
+                            <div class="iradio_square-blue" style="position: relative;"><input type="radio" name="activebtn" class="advisoryCloseCalls customButtons" id="closeCall" value="closecall" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><span class="vM" style="color: #fff;padding-left:5px;">Previous Calls</span>
+                            <!-- <a href="#" class="gray_btn" style="" id="closeCall" data-call="closeCall">
+                                <span class="" style="">Previous Calls</span></a> -->
+                        </div>
+                        <div class="popupbtn">
+                            <a class="mL10" href="#" id="advisoryRefresh">
+                                <img src="/images/trading/white_Refresh.png">
+                            </a>
+                        </div>
+                        
+                        
+                        <div class="fR watchlist_topIcon at_navigation">
+                            <ul>
+                                <li style="background-color: transparent !important; border: none !important;" class="disabledTabs">
+                                    <div class="yellow_star"></div>
+                                    <div class="star_txt">New</div>
+                                </li>
+                                <li style="background-color: transparent !important; border: none !important;" class="disabledTabs">
+                                    <div class="blue_star"></div>
+                                    <div class="star_txt">Modified</div>
+                                </li>
+                                <li style="background-color: transparent !important; border: none !important;" class="disabledTabs">
+                                    <div class="green_star"></div>
+                                    <div class="star_txt">Closed</div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="cB"></div>
+                </div>
+            </div>
+            <div class="advisorymaindiv" style="" id="table_Wrapper">
+                <div class="fL table-responsive w100" style="overflow:auto;">
+        
+        <table id="myAdvisory_table" class="table-theme-3 vT-col advisioryTechTbl">
+            
+            <thead>
+                <tr>
+                    <th width="3%"> </th>
+                    <th width="11%">Date</th>
+                    <th width="15%">Company Name</th>
+                    <th width="25%">Message</th>
+                    <th width="10%">Sub-Category</th>
+                    <th width="16%" class="aR">CMP <br>  Buy Price</th>
+                    <th width="12%" class="aR">Target Price<br> SL Price </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="" style="" id="myAdvisory_tbody"><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>25-Aug-2022 10:16</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Suprajit Engg." data-date="25-Aug-2022 10:16" data-desc="Long Term Cash Buy SUPRAJIT @342.95 TGT 485((SEL), is the largest supplier of automotive cables to the domestic OEMS SEL over the years has evolved from a single product/client company in India. SEL has outperformed the Indian Auto industry in the recent years. We believe SEL is prime beneficiary of ramp-up in production by OEMs across the globe.)">Suprajit Engg.</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy SUPRAJIT @342.95 TGT 485((SEL), is the largest supplier of automotive cables to t...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">338.75</span><br><span class="market_greyboldSmall font_15">342.95-342.95</span></td><td class="aR"><span class="font_15">485.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','6045','NSE','Suprajit Engg.')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>24-Aug-2022 10:31</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="HDFC Bank" data-date="24-Aug-2022 10:31" data-desc="Long Term Cash Buy HDFCBANK @1464.50 TGT 1610(Largest private sector bank in India with a well diversified book The bank posted NII/PPOP growth of 10.2%/5.3% for the quarter on the back of loan growth of 20.8%yoy Loan book of Rs. 13.68 lakh crore in Q4FY2022 and deposit base of Rs. 15.6 lakh crore Valuations at a discount to historical average provide comfort)">HDFC Bank</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy HDFCBANK @1464.50 TGT 1610(Largest private sector bank in India with a well diver...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">1465.10</span><br><span class="market_greyboldSmall font_15">1464.50-1464.50</span></td><td class="aR"><span class="font_15">1610.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','4987','NSE','HDFC Bank')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>22-Aug-2022 10:39</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="AU Small Finance" data-date="22-Aug-2022 10:39" data-desc="Long Term Cash Buy AUBANK @640.50 TGT 848(Company has a unique high margin lending business across segment Asset quality was stable despite second Covid wave in Q4FY22 Worst of asset quality issue behind for the company Valuations at a discount to historical averages provide comfort)">AU Small Finance</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy AUBANK @640.50 TGT 848(Company has a unique high margin lending business across s...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">641.40</span><br><span class="market_greyboldSmall font_15">640.50-640.50</span></td><td class="aR"><span class="font_15">848.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','34695','NSE','AU Small Finance')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>19-Aug-2022 10:20</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Jubilant Ingrev." data-date="19-Aug-2022 10:20" data-desc="Long Term Cash Buy JUBLINGREA @492.05 TGT 700(One of top two producer of Pyridine - Beta and vitamin B3 globally Revival in lifescience chemical business to drive growth in near term Specialty chemical division to drive growth in medium term Company available at raesonable valuations which provide comfort)">Jubilant Ingrev.</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy JUBLINGREA @492.05 TGT 700(One of top two producer of Pyridine - Beta and vitamin...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">477.85</span><br><span class="market_greyboldSmall font_15">492.05-492.05</span></td><td class="aR"><span class="font_15">700.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','75293','NSE','Jubilant Ingrev.')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>18-Aug-2022 10:25</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Devyani Intl." data-date="18-Aug-2022 10:25" data-desc="Long Term Cash Buy DEVYANI @212.00  TGT 255(DIL is Yum! Brands' largest franchisee in India, with more than 800 stores QSR industry expected to grow ~23% CAGR over FY20-25 to benefit DIL Improving store-level economics to boost the operating margin going ahead Going ahead, we expect DIL would add 200 store per annum)">Devyani Intl.</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy DEVYANI @212.00  TGT 255(DIL is Yum! Brands' largest franchisee in India, with mo...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">185.25</span><br><span class="market_greyboldSmall font_15">212.00-212.00</span></td><td class="aR"><span class="font_15">255.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','24609','NSE','Devyani Intl.')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>11-Aug-2022 10:09</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Amber Enterp." data-date="11-Aug-2022 10:09" data-desc="Long Term Cash Buy AMBER @2199.50 TGT 3850(Market leader in outsourced manufacturing of room AC in India Expected to outperform the industry with new client additions Plans to increase revenues from components &amp; exports Participation in the PLI scheme will boost the revenue growth)">Amber Enterp.</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy AMBER @2199.50 TGT 3850(Market leader in outsourced manufacturing of room AC in I...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">2281.70</span><br><span class="market_greyboldSmall font_15">2199.50-2199.50</span></td><td class="aR"><span class="font_15">3850.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','45967','NSE','Amber Enterp.')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>10-Aug-2022 14:45</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="P I Industries" data-date="10-Aug-2022 14:45" data-desc="Long Term Cash Buy PIIND @3278.85 TGT 3700(Leader in contrant manufacuring to agro chemical companies globally Share of high margin CSM business to drive growth for company Strong relationships with innovater companies globally Companys foray into the API business to help drive growth)">P I Industries</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy PIIND @3278.85 TGT 3700(Leader in contrant manufacuring to agro chemical companie...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">3376.40</span><br><span class="market_greyboldSmall font_15">3278.85-3278.85</span></td><td class="aR"><span class="font_15">3700.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','2650','NSE','P I Industries')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>10-Aug-2022 11:03</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Oberoi Realty" data-date="10-Aug-2022 11:03" data-desc="Long Term Cash Buy OBEROIRLTY @924.50 TGT 1050(Oberoi Realty is a real-estate company, focuses on MMR region Company has reported a strong set of numbers in Q4FY22 Company owns Oberoi Mall, Commerz and the west in hotel We believes that top-10 players will continue to gain market share)">Oberoi Realty</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy OBEROIRLTY @924.50 TGT 1050(Oberoi Realty is a real-estate company, focuses on MM...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">968.25</span><br><span class="market_greyboldSmall font_15">924.50-924.50</span></td><td class="aR"><span class="font_15">1050.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','38025','NSE','Oberoi Realty')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>08-Aug-2022 10:52</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="HCL Technologies" data-date="08-Aug-2022 10:52" data-desc="Long Term Cash Buy HCLTECH @955.40 TGT 1192(Strong client relationship across multiple verticals Best positioned to benefit from migration to hybrid cloud Strong deal wins and adoption of digital technologies to drive growth Stock trading at significant discount to peers)">HCL Technologies</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy HCLTECH @955.40 TGT 1192(Strong client relationship across multiple verticals Bes...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">945.65</span><br><span class="market_greyboldSmall font_15">955.40-955.40</span></td><td class="aR"><span class="font_15">1192.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','5656','NSE','HCL Technologies')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>08-Aug-2022 10:50</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Ashok Leyland" data-date="08-Aug-2022 10:50" data-desc="Long Term Cash Buy ASHOKLEY @146.65 TGT 175((ALL) is one of the leading player in India CV industry with a 32% market share in the MHCV segment Demand for the MHCV segment has started to recover over the past few months We believe that the company is ideally placed to capture the growth revival in the CV segment)">Ashok Leyland</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy ASHOKLEY @146.65 TGT 175((ALL) is one of the leading player in India CV industry ...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">149.50</span><br><span class="market_greyboldSmall font_15">146.65-146.65</span></td><td class="aR"><span class="font_15">175.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','31','NSE','Ashok Leyland')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>08-Aug-2022 10:11</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Stove Kraft" data-date="08-Aug-2022 10:11" data-desc="Long Term Cash Buy STOVEKRAFT @554.10 TGT 805(In last 2 year, SKL has outperformed  its peers in Cookers segment Increase in cooking gas penetration would drive higher growth for SKL High quality stock available at lower valuations Healthy free cash flow &amp; higher profitability)">Stove Kraft</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy STOVEKRAFT @554.10 TGT 805(In last 2 year, SKL has outperformed  its peers in Coo...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">614.25</span><br><span class="market_greyboldSmall font_15">554.10-554.10</span></td><td class="aR"><span class="font_15">805.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','42781','NSE','Stove Kraft')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>04-Aug-2022 10:33</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Federal Bank" data-date="04-Aug-2022 10:33" data-desc="Long Term Cash Buy FEDERALBNK @108.70 TGT 120(Federal bank is one of Indias largest old generation private sector bank At the end of Q4 FY2022 the bank had advances of Rs. 1.45 lakh cr. and deposits of Rs. 1.81 lakh cr Federal Bank has posted a good set of numbers for Q4FY22 as NII/ advances increased We expect the Federal bank to post NII/PPOP/PAT CAGR of 24.9%/29.1%/42.7% between FY2022-24)">Federal Bank</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy FEDERALBNK @108.70 TGT 120(Federal bank is one of Indias largest old generation p...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">113.90</span><br><span class="market_greyboldSmall font_15">108.70-108.70</span></td><td class="aR"><span class="font_15">120.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','3709','NSE','Federal Bank')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>27-Jul-2022 09:55</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Ramkrishna Forg." data-date="27-Jul-2022 09:55" data-desc="Long Term Cash Buy RKFORGE @175.75 TGT 256(Ramkrishna Forgings (RKFL) is a leading forging co. with  large press To benefit from strong domestic &amp; export demand outlook for MHCV Operating leverage and product mix to aid margin expansion Resulting in earnings improving by 10-12x in FY23-24E from FY21 levels)">Ramkrishna Forg.</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy RKFORGE @175.75 TGT 256(Ramkrishna Forgings (RKFL) is a leading forging co. with ...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">191.35</span><br><span class="market_greyboldSmall font_15">175.75-175.75</span></td><td class="aR"><span class="font_15">256.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','24934','NSE','Ramkrishna Forg.')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>22-Jul-2022 10:30</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Sobha" data-date="22-Jul-2022 10:30" data-desc="Long Term Cash Buy SOBHA @702.00 TGT 850(Company operates in Residential &amp; Commercial real-estate We have seen a strong consolidation among listed players in India Inventory levels have moved down in last 1.5 years Company expected to launch 17 new projects spread over 12.56mn sqft)">Sobha</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy SOBHA @702.00 TGT 850(Company operates in Residential &amp; Commercial real-estate We...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">712.10</span><br><span class="market_greyboldSmall font_15">702.00-702.00</span></td><td class="aR"><span class="font_15">850.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','27443','NSE','Sobha')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.com/images/Yellow_star.png"></span></td><td><span>21-Jul-2022 10:06</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Sona BLW Precis." data-date="21-Jul-2022 10:06" data-desc="Long Term Cash Buy SONACOMS @576.35 TGT 843(Sona Comstar is one of India's leading automotive technology companies ~40% revenues are from fast growing segments like BEV and Hybrids. Market share ranges from 55-90% for differential gears for Indian OEMs High earnings CAGR of ~47% over FY21-24E justifies premium valuations)">Sona BLW Precis.</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy SONACOMS @576.35 TGT 843(Sona Comstar is one of India's leading automotive techno...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">530.80</span><br><span class="market_greyboldSmall font_15">576.35-576.35</span></td><td class="aR"><span class="font_15">843.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','18341','NSE','Sona BLW Precis.')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr><tr><td> <span><img src="https://trade.angelbroking.comhttps://trade.angelbroking.com"></span></td><td><span>20-Jul-2022 10:02</span></td><td> <div class="fL" style=""><span class="big_title ttU"><a href="#" class="detailPage font_16 b" data-comp_name="Marico" data-date="20-Jul-2022 10:02" data-desc="Long Term Cash Buy MARICO @510.10 TGT 600(FMCG sector to outperform in current uncertain scenario High quality stock available at reasonable valuations Marico is engaged in manufacturing personal care FMCG products Expect healthy bottom-line CAGR of ~11% over FY2022-24E)">Marico</a></span><br><br></div></td><td><div class="fL" style=""><span>Long Term Cash Buy MARICO @510.10 TGT 600(FMCG sector to outperform in current uncertain scenario Hi...</span></div></td><td><span>Long Term Cash</span></td><td class="aR"><span class="font_15">515.60</span><br><span class="market_greyboldSmall font_15">510.10-510.10</span></td><td class="aR"><span class="font_15">600.00</span><br><span class="market_greyboldSmall font_15">0.00</span></td><td class="aR vaM" colspan="1"><div><a onclick="GetAdvisoryPlaceOrder('B','12585','NSE','Marico')" class="blue_btn " style="min-width:50px;cursor:pointer;">BUY</a></div></td></tr></tbody>
+        </table>
+    
+        <table id="myderAdvisory_table" class="table-theme-3 vT-col advisioryDeriTbl" style="display:none;">
+            
+            <thead>
+                <tr>
+                    <th width="3%"> </th>
+                    <th width="11%">Date</th>
+                    <th width="10%">Symbol<br>Expiry Date<br>Instrument</th>
+                    <th width="10%">Strike Price<br>Option</th>
+                    <th width="25%">Message</th>
+                    <th width="17%" class="aR"> CMP <br> Buy Price</th>
+                    <th width="12%" class="aR">Target Price <br> SL Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="" style="" id="myderAdvisory_tbody"></tbody>
+        </table>
+    
+       
+            <table id="myrecomAdvisory_table" class="table-theme-3 vT-col advisioryTechTbl" style="display: none;">
+                <thead>
+                    <tr>
+                        
+    
+                        <th width="11%">
+                            <div class="fL triggerHeadClick"> <span class=""> Date</span> </div>
+                            <div class="fL sort-icon"> <a class="sort sortTable sortUp" id="sort_Date" data-attr="Call_Date" data-sortorder="None" title="Click here for Sorting"></a> </div>
+                        </th>
+                        <th width="11%">
+                            <div class="triggerHeadClick"> <span class=""> Type</span> </div>
+                            <div class="sort-icon"> <a class="sort sortTable " id="sort_Type" data-attr="" data-sortorder="None" title="Click here for Sorting"></a> </div>
+                        </th>
+                        <th width="20%">
+                            <div class="triggerHeadClick"> <span class=""> Company Name / Symbol <br> Instrument / Expiry Date</span> </div>
+                            <div class="sort-icon"> <a class="sort sortTable " id="sort_CompanyName" data-attr="CompanyName_Symbol" data-sortorder="None" title="Click here for Sorting"></a> </div>
+    
+                        </th>
+                        <th width="13%">
+                            <div class="triggerHeadClick"> <span class="">Strike Price / Option</span> </div>
+                            <div class="sort-icon"> <a class="sort sortTable " id="sort_SubCategory" data-attr="Strike_Price" data-sortorder="None" title="Click here for Sorting"></a> </div>
+                        </th>
+                        <th width="23%">
+                            <div class="triggerHeadClick"> <span class=""> Message</span> </div>
+                            <div class="sort-icon"> <a class="sort sortTable " id="sort_Message" data-attr="CALL_MESSAGE" data-sortorder="None" title="Click here for Sorting"></a> </div>
+                        </th>
+                        <th width="12%">
+                            <div class="triggerHeadClick"> <span class="">CMP <br>  Buy Price</span> </div>
+                            <div class="sort-icon"> <a class="sort sortTable " id="sort_BuyPrice" data-attr="Buy_Price" data-sortorder="None" title="Click here for Sorting"></a> </div>
+                        </th>
+                        <th width="10%">
+                            <div class="triggerHeadClick"> <span class=""> Target Price<br> SL Price</span> </div>
+                            <div class="sort-icon"> <a class="sort sortTable " id="sort_SLPrice" data-attr="SLPrice" data-sortorder="None" title="Click here for Sorting"></a> </div>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="" style="" id="myrecomAdvisory_tbody"></tbody>
+            </table>
+    
+        <table id="myCurrCommAdvisory_table" class="table-theme-3 vT-col advisioryDeriTbl" style="display:none;">
+            <thead>
+                <tr>
+                    <th width="3%"> </th>
+                    <th width="11%">Date</th>
+                    <th width="10%">Symbol<br>Expiry Date<br>Instrument</th>
+                    <th width="14%">Category</th>
+                    <th width="25%">Message</th>
+                    <th width="15%" class="aR"> CMP <br> Buy Price</th>
+                    <th width="10%" class="aR">Target Price <br> SL Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="" style="" id="myCurrCommAdvisory_tbody"></tbody>
+        </table>
+    
+        
+    </div>
+    
+    
+    
+    
+    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

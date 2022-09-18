@@ -1,0 +1,17 @@
+<body>
+    <div class="container">
+
+<div onclick = "handleClick('red')"  id="red">Red</div>
+<div onclick = "handleClick('green')"  id="green">Green</div>
+<div onclick = "handleClick('yellow')"  id="yellow">Yellow</div>
+<div onclick = "handleClick('black')"  id="black">Black</div>
+</div>
+<script>
+    function handleClick(args) {
+        console.log("clicked",args)
+            const id = document.getElementById(args)
+            id.style.backgroundColor =args
+        
+    }
+</script>
+</body>
